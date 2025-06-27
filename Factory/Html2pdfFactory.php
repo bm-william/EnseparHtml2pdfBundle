@@ -30,7 +30,7 @@ class Html2pdfFactory
      * If not provided, the following arguments will be replaced by the default
      * value set in the constructor.
      */
-    public function create(string $orientation = null, string $format = null, string $lang = null, bool $unicode = null, string $encoding = null, array $margin = null): Html2Pdf
+    public function create(?string $orientation = null, ?string $format = null, ?string $lang = null, ?bool $unicode = null, ?string $encoding = null, ?array $margin = null): Html2Pdf
     {
         return new Html2Pdf(
             $orientation ? $orientation : $this->orientation,
