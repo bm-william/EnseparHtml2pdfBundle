@@ -19,7 +19,7 @@ class EnseparHtml2pdfExtension extends Extension
         }
 
         $file = new FileLocator(__DIR__.'/../Resources/config');
-        $loader = new Loader\XmlFileLoader($container, $file);
-        $loader->load('services.xml');
+        $loader = new Loader\YamlFileLoader($container, $file);
+        $loader->load('services.yaml');
     }
 }
